@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="https://cf.shopee.vn/file/0e9b0a3ae93602117e26103fabf9ca6c" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Trang chủ</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Personal -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/headFoot.css">
+  <link rel="stylesheet" href="/css/trangchu.css">
+
+</head>
+
+<body>
+  <!-- Show cart phụ -->
+  <div class="sub-action-cart">
+    <div class="top-action">
+      <h3>Giỏ hàng <span class="number-cart">1</span></h3>
+    </div>
+    <div class="main-action">
+      <div class="item-product-cart d-flex">
+        <div class="thumb-product-cart">
+          <img src="https://mcdn.nhanh.vn/store3/108661/ps/20220526/Sunny__2_.jpg"
+            alt="Áo kiểu công sở">
+        </div>
+        <div class="info-product-cart">
+          <h3><a href="">Váy lụa cao cấp</a></h3>
+          <div class="info-properties d-flex">
+            <p class="properties-color">Màu sắc: <strong>Tím Lavender </strong></p>
+            <p>Size: <strong style="text-transform: uppercase">l</strong></p>
+          </div>
+          <div class="info-price-mini d-flex">
+            <div class="info-price-quantity d-flex">
+              <div class="price-quantity-minus price-quantity">-</div>
+              <input type="number" class="inputQuantity" value="1" min="1">
+              <div class="price-quantity-plus price-quantity">+</div>
+            </div>
+            <div class="price-cart-mini"><span>1.390.000₫ </span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="bottom-action">
+      <div class="total-price">Tổng cộng: <strong>1.390.000đ</strong></div>
+      <div class="box-action">
+        <a href="./giohang.html" class="action-view-cart">Xem giỏ
+          hàng</a>
+        <a href="" class="action-login">Đăng nhập</a>
+      </div>
+    </div>
+    <div class="action-close"><i class="fa-solid fa-plus"></i></div>
+  </div>
+
+  <!-- Popup thông báo thêm hàng -->
+  <div id="add-to-cart">
+    <div class="notify__img">
+      <img src="./public/image/add cart.png" alt="">
+    </div>
+    <p class="notify__add-to-cart--success">Thêm vào giỏ hàng thành công !</p>
+    <div class="close__add-to-cart"><i class="fa-solid fa-plus"></i></div>
+  </div>
+
+  <div class="overlay"></div>
+  <!-- menu phụ mobile -->
+  <div class="sub-mobile-menu">
+    <div class="box-action">
+      <a href="" class="action-login">Đăng nhập</a>
+    </div>
+    <ul class="main__menu-mb">
+      <li>
+        <a href="/tatcasanpham.html">Nữ<span class="arrow"><i class="icon-ic_plus"></i><i
+              class="icon-ic_minus"></i></span>
+        </a>
+      </li>
+      <li>
+        <a href="">Nam<span class="arrow"><i class="icon-ic_plus"></i><i class="icon-ic_minus"></i></span></a>
+      </li>
+      <li>
+        <a href="">Trẻ em<span class="arrow"><i class="icon-ic_plus"></i><i class="icon-ic_minus"></i></span></a>
+      </li>
+      <li>
+        <a href="">LIFESTYLE</a>
+      </li>
+      <li>
+        <a href="">Về Chúng Tôi<span class="arrow"><i class="icon-ic_plus"></i><i class="icon-ic_minus"></i></span></a>
+      </li>
+    </ul>
+    <div class="close__menu"><i class="fa-solid fa-plus"></i></div>
+  </div>
+
+  <!-- Đăng nhập, đăng ký -->
+  <div class="auth">
+    <div class="container">
+      <div class="row auth--box">
+        <div class="auth__choose">
+          <div class="auth__choose--style auth__choose--login open">Đăng nhập</div>
+          <div class="auth__choose--style auth__choose--register">Đăng ký</div>
+        </div>
+        <div class="col-xs-12 col-lg-6 auth__login auth__block open">
+          <h3 class="auth__title">Bạn đã có tài khoản</h3>
+          <div class="auth__login__content">
+            <p class="auth__description">
+              Nếu bạn đã có tài khoản, hãy đăng nhập để tích lũy điểm
+              thành viên và nhận được những ưu đãi tốt hơn!
+            </p>
+            <form class="auth__form">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Email/SĐT" value="">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="password" placeholder="Mật khẩu">
+              </div>
+              <div class="auth__form__options">
+                <div class="form-checkbox">
+                  <label>
+                    <input class="checkboxs" type="checkbox">
+                    <span style="margin-left: 5px"> Ghi nhớ đăng nhập</span>
+                  </label>
+                </div>
+                <a class="auth__form__link" href="">Quên mật khẩu? </a>
+              </div>
+              <div class="auth__form__buttons">
+                <button class="btn btn--large">Đăng nhập</button>
+              </div>
+              <div class="auth__form__buttons">
+                <button class="btn btn--large btn--face"><i class="fa-brands fa-facebook-f"></i>Đăng nhập bằng
+                  facebook</button>
+              </div>
+              <div class="auth__form__buttons">
+                <button class="btn btn--large btn--gg"><i class="fa-brands fa-google"></i>Đăng nhập bằng
+                  google</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <div class="col-xs-12 col-lg-6 auth__register auth__block">
+          <h3 class="auth__title">Khách hàng mới</h3>
+          <div class="auth__login__content">
+            <p class="auth__description">
+              Nhận hàng ngàn ưu đãi khi đăng ký thành viên tại Minh Châu
+            </p>
+            <form class="auth__form">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Email/SĐT" value="">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="password" placeholder="Mật khẩu">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="password" placeholder="Nhập lại mật khẩu">
+              </div>
+            </form>
+
+            <div class="auth__form__buttons">
+              <a href=""> <button class="btn btn--large">Đăng ký</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="user-close"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+    </div>
+  </div>
+  <!-- Header -->
+  <header id="header" class="site-header">
+    <div class="container d-flex _border-head">
+      <div class="main__menu">
+        <ul class="menu">
+          <li>
+            <a href="./tatcasanpham.html">Nữ</a>
+          </li>
+          <li>
+            <a href="#">Nam</a>
+          </li>
+          <li>
+            <a href="#">Trẻ em</a>
+          </li>
+          <li>
+            <a href="#">Bộ sưu tập</a>
+          </li>
+          <li>
+            <a href="#">LIFESTYLE</a>
+          </li>
+          <li>
+            <a href="#">Về chúng tôi</a>
+          </li>
+        </ul>
+        <div class="menu_mobile"><i class="fa-solid fa-bars"></i></div>
+      </div>
+      <section class="logo">
+        <a href="./index.html">
+          <img src="./image/Logo.png" alt="Minhchau">
+        </a>
+      </section>
+      <section class="user--action">
+        <div class="search--form">
+          <button class="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input id="search" type="text" placeholder="TÌM KIẾM SẢN PHẨM">
+        </div>
+        <div class="icon--action">
+          <div class="_item">
+            <a href="#" class="icon">
+              <i class="fa-solid fa-headphones-simple"></i>
+            </a>
+          </div>
+          <div class="_item _item--user">
+            <a href="#" class="icon">
+              <i class="fa-solid fa-user"></i>
+            </a>
+          </div>
+          <div class="_item _item--shopcart">
+            <a href="" class="icon">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="number-cart">0</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <div id="main" class="site-main">
+    <div class="container p-0">
+      <div class="_banner">
+        <div class="slider owl-carousel owl-theme">
+          <div class="item-banner">
+            <a href="#">
+              <img
+                src="./public/image/banner1.jpeg">
+            </a>
+          </div>
+
+          <div class="item-banner">
+            <a href="#">
+              <img
+                src="./public/image/banner3.jpeg"
+                alt="slide image">
+            </a>
+          </div>
+
+          <div class="item-banner">
+            <a href="#">
+              <img
+                src="./public/image/banner2.jpeg"
+                alt="slide image">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="_new-prod">
+        <div class="title-section">New Arrival
+        </div>
+        <div class="_new-prod-content">
+          <div class="head-content">
+            <ul>
+              <li class="arrival-tab--choose active">
+                Woman
+              </li>
+              <li class="arrival-tab--choose">
+                Man
+              </li>
+              <li class="arrival-tab--choose">
+                Kids
+              </li>
+            </ul>
+          </div>
+          <div class="main--content">
+            <div id="tab-women">
+              <div class="list-products new-prod-slider owl-carousel owl-theme">
+                <div class="item-new-prod">
+                  <div class="product">
+                    <div class="info-ticket ticket-news">NEW</div>
+                    <div class="thumb-product">
+                      <a href="./chitiet.html">
+                        <img
+                          src="./public/image/sanpham1.1.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa">
+                        <img
+                          src="./public/image/sanpham1.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa" class="hover-img">
+                      </a>
+                    </div>
+                    <div class="info-product">
+                      <div class="list-color">
+                        <ul>
+                          <li>
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/049.png">
+                            </a>
+                          </li>
+                          <li class="checked">
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/h13.png">
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="favourite">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div>
+                      <h3 class="title-product">
+                        <a href="#">Floral
+                          Dress - Đầm hoa lụa</a>
+                      </h3>
+                      <div class="price-product">
+                        <span>2.190.000đ</span>
+                      </div>
+                    </div>
+                    <div class="add-to-cart">
+                      <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                    <!-- <div class="list-size">
+                      <ul>
+                        <li><button class="btn bt-large">s</button></li>
+                        <li><button class="btn bt-large">m</button></li>
+                        <li><button class="btn bt-large">l</button></li>
+                        <li><button class="btn bt-large">xl</button></li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="item-new-prod">
+                  <div class="product">
+                    <div class="info-ticket ticket-news">NEW</div>
+                    <div class="thumb-product">
+                      <a href="./chitiet.html">
+                        <img
+                          src="./public/image/sanpham3.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa">
+                        <img
+                          src="./public/image/sanpham3.1.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa" class="hover-img">
+                      </a>
+                    </div>
+                    <div class="info-product">
+                      <div class="list-color">
+                        <ul>
+                          <li>
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/049.png">
+                            </a>
+                          </li>
+                          <li class="checked">
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/h13.png">
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="favourite">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div>
+                      <h3 class="title-product">
+                        <a href="#">Floral
+                          Dress - Đầm hoa lụa</a>
+                      </h3>
+                      <div class="price-product">
+                          <span>2.190.000đ</span>
+                      </div>
+                    </div>
+                    <div class="add-to-cart">
+                      <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                    <!-- <div class="list-size">
+                      <ul>
+                        <li><button class="btn bt-large">s</button></li>
+                        <li><button class="btn bt-large">m</button></li>
+                        <li><button class="btn bt-large">l</button></li>
+                        <li><button class="btn bt-large">xl</button></li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="item-new-prod">
+                  <div class="product">
+                    <div class="info-ticket ticket-news">NEW</div>
+                    <div class="thumb-product">
+                      <a href="./chitiet.html">
+                        <img
+                          src="./public/image/sanpham4.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa">
+                        <img
+                          src="./public/image/sanpham4.1.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa" class="hover-img">
+                      </a>
+                    </div>
+                    <div class="info-product">
+                      <div class="list-color">
+                        <ul>
+                          <li>
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/049.png">
+                            </a>
+                          </li>
+                          <li class="checked">
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/h13.png">
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="favourite">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div>
+                      <h3 class="title-product">
+                        <a href="#">Floral
+                          Dress - Đầm hoa lụa</a>
+                      </h3>
+                      <div class="price-product">
+                          <span>2.190.000đ</span>
+                      </div>
+                    </div>
+                    <div class="add-to-cart">
+                      <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                    <!-- <div class="list-size">
+                      <ul>
+                        <li><button class="btn bt-large">s</button></li>
+                        <li><button class="btn bt-large">m</button></li>
+                        <li><button class="btn bt-large">l</button></li>
+                        <li><button class="btn bt-large">xl</button></li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="item-new-prod">
+                  <div class="product">
+                    <div class="info-ticket ticket-news">NEW</div>
+                    <div class="thumb-product">
+                      <a href="./chitiet.html">
+                        <img
+                          src="./public/image/sanpham5.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa">
+                        <img
+                          src="./public/image/sanpham5.1.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa" class="hover-img">
+                      </a>
+                    </div>
+                    <div class="info-product">
+                      <div class="list-color">
+                        <ul>
+                          <li>
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/049.png">
+                            </a>
+                          </li>
+                          <li class="checked">
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/h13.png">
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="favourite">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div>
+                      <h3 class="title-product">
+                        <a href="#">Floral
+                          Dress - Đầm hoa lụa</a>
+                      </h3>
+                      <div class="price-product">
+                          <span>2.190.000đ</span>
+                      </div>
+                    </div>
+                    <div class="add-to-cart">
+                      <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                    <!-- <div class="list-size">
+                      <ul>
+                        <li><button class="btn bt-large">s</button></li>
+                        <li><button class="btn bt-large">m</button></li>
+                        <li><button class="btn bt-large">l</button></li>
+                        <li><button class="btn bt-large">xl</button></li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="item-new-prod">
+                  <div class="product">
+                    <div class="info-ticket ticket-news">NEW</div>
+                    <div class="thumb-product">
+                      <a href="./chitiet.html">
+                        <img
+                          src="./public/image/sanpham6.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa">
+                        <img
+                          src="./public/image/sanpham6.1.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa" class="hover-img">
+                      </a>
+                    </div>
+                    <div class="info-product">
+                      <div class="list-color">
+                        <ul>
+                          <li>
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/049.png">
+                            </a>
+                          </li>
+                          <li class="checked">
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/h13.png">
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="favourite">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div>
+                      <h3 class="title-product">
+                        <a href="#">Floral
+                          Dress - Đầm hoa lụa</a>
+                      </h3>
+                      <div class="price-product">
+                          <span>2.190.000đ</span>
+                      </div>
+                    </div>
+                    <div class="add-to-cart">
+                      <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                    <!-- <div class="list-size">
+                      <ul>
+                        <li><button class="btn bt-large">s</button></li>
+                        <li><button class="btn bt-large">m</button></li>
+                        <li><button class="btn bt-large">l</button></li>
+                        <li><button class="btn bt-large">xl</button></li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="item-new-prod">
+                  <div class="product">
+                    <div class="info-ticket ticket-news">NEW</div>
+                    <div class="thumb-product">
+                      <a href="./chitiet.html">
+                        <img
+                          src="./public/image/sanpham7.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa">
+                        <img
+                          src="./public/image/sanpham7.1.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa" class="hover-img">
+                      </a>
+                    </div>
+                    <div class="info-product">
+                      <div class="list-color">
+                        <ul>
+                          <li>
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/049.png">
+                            </a>
+                          </li>
+                          <li class="checked">
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/h13.png">
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="favourite">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div>
+                      <h3 class="title-product">
+                        <a href="#">Floral
+                          Dress - Đầm hoa lụa</a>
+                      </h3>
+                      <div class="price-product">
+                          <span>2.190.000đ</span>
+                      </div>
+                    </div>
+                    <div class="add-to-cart">
+                      <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                    <!-- <div class="list-size">
+                      <ul>
+                        <li><button class="btn bt-large">s</button></li>
+                        <li><button class="btn bt-large">m</button></li>
+                        <li><button class="btn bt-large">l</button></li>
+                        <li><button class="btn bt-large">xl</button></li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="item-new-prod">
+                  <div class="product">
+                    <div class="info-ticket ticket-news">NEW</div>
+                    <div class="thumb-product">
+                      <a href="./chitiet.html">
+                        <img
+                          src="./public/image/sanpham9.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa">
+                        <img
+                          src="./public/image/sanpham9.1.jpeg"
+                          alt="Floral Dress - Đầm hoa lụa" class="hover-img">
+                      </a>
+                    </div>
+                    <div class="info-product">
+                      <div class="list-color">
+                        <ul>
+                          <li>
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/049.png">
+                            </a>
+                          </li>
+                          <li class="checked">
+                            <a href="#" class="color-picker">
+                              <img src="https://pubcdn2.ivymoda.com/images/color/h13.png">
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="favourite">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                      </div>
+                      <h3 class="title-product">
+                        <a href="#">Floral
+                          Dress - Đầm hoa lụa</a>
+                      </h3>
+                      <div class="price-product">
+                          <span>2.190.000đ</span>
+                      </div>
+                    </div>
+                    <div class="add-to-cart">
+                      <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                    <!-- <div class="list-size">
+                      <ul>
+                        <li><button class="btn bt-large">s</button></li>
+                        <li><button class="btn bt-large">m</button></li>
+                        <li><button class="btn bt-large">l</button></li>
+                        <li><button class="btn bt-large">xl</button></li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="link-products">
+                <a href="/tatcasanpham.html" class="all-product">Xem tất cả</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-trending">
+        <div class="img-trending">
+          <img src="https://theme.hstatic.net/200000077237/1000857115/14/ms_banner_img4.jpg?v=252"
+            alt="Elevated Simplicity - New Collection">
+        </div>
+        <div class="trending-content">
+          <div class="box-trending">
+            <div class="link-trending">
+              <a href="#">XEM NGAY BST</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-gallery">
+        <h3 class="title-gallery">GALLERY</h3>
+        <div class="list-gallery owl-carousel owl-theme">
+          <div class="item-gallery">
+            <a href="#">
+              <img src="https://mcdn.nhanh.vn/store3/108661/album/alb_1653100122_929.jpg"
+                alt="anh">
+            </a>
+          </div>
+          <div class="item-gallery">
+            <a href="#">
+              <img src="https://mcdn.nhanh.vn/store3/108661/album/alb_1649821046_658.jpg"
+                alt="anh">
+            </a>
+          </div>
+          <div class="item-gallery">
+            <a href="#">
+              <img src="https://mcdn.nhanh.vn/store3/108661/album/alb_1648884973_179.jpg"
+                alt="anh">
+            </a>
+          </div>
+          <div class="item-gallery">
+            <a href="#">
+              <img src="https://mcdn.nhanh.vn/store3/108661/album/alb_1649037236_972.jpg"
+                alt="anh">
+            </a>
+          </div>
+          <div class="item-gallery">
+            <a href="#">
+              <img src="https://mcdn.nhanh.vn/store3/108661/album/alb_1649037294_399.jpg"
+                alt="anh">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- End Main -->
+
+  <footer id="footer" class="site-footer">
+    <div class="container">
+      <div class="main-footer d-flex">
+        <div class="left-footer">
+          <div class="top-left d-flex">
+            <div class="logo-footer">
+              <a href="#">
+                <img src="./image/Logo.png" alt="logo-footer">
+              </a>
+            </div>
+            <div class="logo-conthuong">
+              <a target="_blank" href="#">
+                <img src="./image/img-congthuong.png" alt="img-congthuong">
+              </a>
+            </div>
+          </div>
+          <div class="content-left-ft">
+            <div class="info-left-ft">
+              <p>Công ty Cổ phần Minh Châu với số đăng ký kinh doanh: 0123456789</p>
+              <p><strong>Địa chỉ đăng ký: </strong>TP.Hà Nội, Việt Nam</p>
+              <p><strong>Số điện thoại: </strong>0123 456 789</p>
+            </div>
+            <ul class="list-social d-flex">
+              <li>
+                <a href="#">
+                  <img src="./public/sgv/fb.svg" alt="ic_fb">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./public/sgv/gg.svg" alt="ic_gg">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./public/sgv/insta.svg" alt="ic_instagram"
+                    style="height: 30px;">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./public/sgv/printest.svg" alt="ic_pinterest"
+                    style="height: 27px">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./public/sgv/youtube.svg" alt="ic_ytb">
+                </a>
+              </li>
+            </ul>
+            <div class="hotline">
+              <a href="#">Hotline: 0123 456 789</a>
+            </div>
+          </div>
+        </div>
+        <div class="center-footer d-flex">
+          <div class="item-center-ft">
+            <p class="title-footer">Giới thiệu</p>
+            <ul>
+              <li>
+                <a href="#">Về Minh Châu</a>
+              </li>
+              <li>
+                <a target="_blank" href="#">Tuyển dụng</a>
+              </li>
+              <li>
+                <a href="#">Hệ thống cửa hàng</a>
+              </li>
+            </ul>
+          </div>
+          <div class="item-center-ft">
+            <p class="title-footer">Dịch vụ khách hàng</p>
+            <ul>
+              <li>
+                <a href="#">Chính sách điều khoản</a>
+              </li>
+              <li>
+                <a href="#">Hướng dẫn mua hàng</a>
+              </li>
+              <li>
+                <a href="#">Chính sách thanh toán</a>
+              </li>
+              <li>
+                <a href="#">Chính sách đổi trả</a>
+              </li>
+              <li>
+                <a href="#">Chính sách bảo hành</a>
+              </li>
+              <li>
+                <a href="#">Chính sách giao nhận vận
+                  chuyển</a>
+              </li>
+            </ul>
+          </div>
+          <div class="item-center-ft">
+            <p class="title-footer">Liên hệ</p>
+            <ul>
+              <li>
+                <a href="#">Hotline</a>
+              </li>
+              <li>
+                <a href="#">Email</a>
+              </li>
+              <li>
+                <a href="#">Live Chat</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Messenger</a>
+              </li>
+              <li>
+                <a href="#">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-footer">
+          <div class="register-form">
+            <p class="title-footer">Nhận thông tin các chương trình của Minh Châu</p>
+            <div class="subscribe d-flex">
+              <input type="text" name="email" placeholder="Nhập địa chỉ email" required="required">
+              <div class="btn-submit">
+                <input class="form-submit" value="Đăng ký" type="submit">
+              </div>
+            </div>
+            <div id="subscribe_error"></div>
+          </div>
+          <div class="info-right-ft">
+            <p class="title-footer">Download App</p>
+            <ul>
+              <li>
+                <a href="#" class="link-white" target="_blank"
+                  title="Tải App Minh Châu trên App Store"> <img src="./public/image/appstore.png"
+                    class="img-fluid" alt=""> </a>
+              </li>
+              <li>
+                <a href="#" class="link-white" target="_blank"
+                  title="Tải App Minh Châu trên Google Play"> <img src="./public/image/googleplay.png"
+                    class="img-fluid" alt=""> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="site-bottom-mb">
+    <div class="container">
+      <div class="main-footer">
+        <div class="center-footer">
+          <div class="item-center-ft">
+            <p class="title-footer">Giới thiệu <i class="fa-solid fa-angle-right "></i></p>
+          </div>
+          <div class="item-center-ft">
+            <p class="title-footer">Dịch vụ khách hàng<i class="fa-solid fa-angle-right"></i></p>
+          </div>
+          <div class="item-center-ft">
+            <p class="title-footer">Liên hệ<i class="fa-solid fa-angle-right"></i></p>
+          </div>
+        </div>
+        <div class="right-footer">
+          <div class="register-form">
+            <p class="title-footer">Nhận thông tin các chương trình của Minh Châu</p>
+            <div class="subscribe">
+              <input type="text" name="email" placeholder="Nhập địa chỉ email của bạn"
+                required="required">
+              <div class="btn-submit">
+                <input type="submit" class="form-submit" value="Đăng ký">
+              </div>
+            </div>
+            <div id="subscribe_mobile_error"></div>
+          </div>
+        </div>
+        <div class="socials-ft">
+          <ul class="list-social">
+            <li>
+              <a href="#">
+                <img src="./public/sgv/fb.svg" alt="ic_fb">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./public/sgv/gg.svg" alt="ic_gg">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./public/sgv/insta.svg" alt="ic_instagram"
+                  style="height: 30px;">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./public/sgv/printest.svg" alt="ic_pinterest"
+                  style="height: 27px">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./public/sgv/youtube.svg" alt="ic_ytb">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="left-footer">
+          <div class="top-left">
+            <div class="logo-footer">
+              <a href="#">
+                <img src="./image/Logo.png" alt="logo-footer">
+              </a>
+            </div>
+            <div class="logo-conthuong">
+              <a href="">
+                <img src="./image/img-congthuong.png" alt="img-congthuong">
+              </a>
+            </div>
+          </div>
+          <div class="content-left-ft content-ft">
+            <div class="info-left-ft">
+              <p>Công ty Cổ phần Minh Châu với số đăng ký kinh doanh: 0123456789</p>
+              <p><strong>Địa chỉ đăng ký: </strong>TP.Hà Nội, Việt Nam</p>
+              <p><strong>Số điện thoại: </strong>0123 456 789</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/js/main.js"></script>
+
+
+  <script>
+    $('.slider').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+
+    $('.new-prod-slider').owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: true,
+      responsive: {
+        0: {
+          items: 2.25
+        },
+        600: {
+          items: 3.25
+        },
+        1000: {
+          items: 5.25
+        }
+      }
+    })
+
+    $('.list-gallery').owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: true,
+      responsive: {
+        0: {
+          items: 2.25
+        },
+        600: {
+          items: 3.25
+        },
+        1000: {
+          items: 5.25
+        }
+      }
+    })
+
+
+  </script>
+
+</body>
+
+</html>

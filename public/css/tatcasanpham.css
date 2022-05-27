@@ -1,0 +1,326 @@
+.section-list-products {
+    margin-top: 46px;
+}
+
+.sidebar-prod {
+    max-width: 270px;
+    width: 100%;
+}
+
+.filter-by-side {
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.filter-by-side::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+.list-side {
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+.list-side::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+.item-side {
+    border-bottom: 1px solid #F7F8F9;
+    margin-bottom: 16px;
+}
+
+.item-side-title .fa--minus {
+    display: none;
+}
+
+.item-side.open .item-side-title .fa-plus {
+    display: none;
+}
+
+.item-side.open .item-side-title .fa--minus,
+.item-side.open .sub-list-side {
+    display: block;
+}
+
+.list-side li .item-side-title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #221F20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.main-prod {
+    width: calc(100% - 270px);
+    padding-left: 30px;
+}
+
+.top-main-prod {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 26px;
+}
+
+.sub-title-main {
+    max-width: calc(100% - 256px);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #221F20;
+    text-transform: uppercase;
+}
+
+/* ----------- */
+.item-filter {
+    display: inline-block;
+    margin-right: 16px;
+    position: relative;
+}
+
+.item-filter .title-list-filter {
+    min-width: 240px;
+    /* width: 100%; */
+    font-size: 14px;
+    line-height: 16px;
+    color: #221F20;
+    background: #FFFFFF;
+    border: 1px solid #E7E8E9;
+    border-radius: 24px;
+    padding: 12px 40px 12px 16px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+.item-filter .title-list-filter i {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: all 0.35s ease-in-out;
+}
+
+.list-number-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #E7E8E9;
+    border-radius: 8px;
+    padding: 16px 16px 13px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    z-index: 10;
+}
+
+.list-number-row.open {
+    opacity: 1;
+    top: 50px;
+    visibility: visible;
+}
+
+.item-filter .title-list-filter i.open {
+    transform: rotate(180deg);
+    top: 33%;
+
+}
+
+.list-number-row .item-number-row a {
+    font-size: 14px;
+    line-height: 40px;
+    color: #221F20;
+}
+
+.list-number-row .item-number-row a:hover {
+    font-weight: 600;
+    color: #221F20;
+
+}
+/* --------------- */
+
+.list-products-cat {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.list-products-cat .item-product {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.list-products .product {
+    position: relative;
+}
+
+/* Phần filter */
+.sub-list-side {
+    display: none;
+}
+
+.item-sub-list {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #221F20;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.item-side-color .item-sub-list,
+.item-side-size .item-sub-list {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.item-side-size .item-sub-list {
+    max-width: 47px;
+    width: 100%;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.item-sub-title {
+    cursor: pointer;
+    padding-left: 32px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+}
+
+.item-side-size .item-sub-title {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 8px 0;
+    color: #6C6D70;
+    display: block;
+    border: 1px solid #e7e8e9;
+    border-radius: 8px 0px;
+}
+
+.color-filter .item-sub-list .item-sub-title {
+    padding-left: 0;
+}
+
+.color-filter .item-sub-list .item-sub-title img {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.item-side-price .item-sub-list {
+    display: flex;
+    align-items: center;
+}
+
+.item-side-price .item-sub-list input {
+    appearance: auto;
+}
+
+.item-side-price .item-sub-list .item-sub-title{
+    padding-left: 12px;
+}
+
+.sidebar-pro {
+    display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .section-list-products {
+        margin-top: 16px;
+    }
+
+    .sidebar-prod {
+        display: none;
+    }
+
+    .main-prod {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .top-main-prod {
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+
+    .box-products .sub-title-main,
+    .filter-prod {
+        max-width: 100%;
+        position: relative;
+    }
+
+    .item-filter {
+        width: 82.5%;
+    }
+
+    .sidebar-pro {
+        display: block;
+        position: absolute;
+        width: auto;
+        top: 0;
+        right: 0;
+    }
+
+    .filter-search {
+        border: 1px solid #D1D2D4;
+        border-radius: 8px 0px;
+        padding: 7px 11px;
+        font-size: 15px;
+    }
+
+    .list-products-cat {
+        margin: 0 -8px;
+    }
+
+    .list-products-cat .item-product {
+        width: 50%;
+        padding: 0 8px;
+        margin-bottom: 16px;
+    }
+
+    .filter-search-mb {
+        width: 95vw;
+        position: absolute;
+        top: 54px;
+        right: 0;
+        background: #FFF;
+        z-index: 18;
+        padding: 20px 20px;
+        border: 1px solid #E7E8E9;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -ms-transition: all 0.3s ease-in-out 0s;
+    }
+
+    .filter-search-mb.open {
+        opacity: 1;
+        visibility: visible;
+    }
+}
